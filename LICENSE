@@ -1,0 +1,47 @@
+MIT License
+
+Copyright (c) 2026 Junoh Kang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+Third-party code
+
+The files below are licensed under their own terms, as noted.
+
+- probsiginv/inversion/baselines/insertion.py is adapted from Signatory
+  (https://github.com/patrick-kidger/signatory), Copyright 2019 Patrick Kidger,
+  and is licensed under the Apache License, Version 2.0. See
+  licenses/Signatory-LICENSE. It has been modified for this repository.
+
+- probsiginv/inversion/baselines/fourier.py and the signature helpers in
+  probsiginv/inversion/baselines/legendre.py are adapted from SigDiffusions
+  (https://github.com/Barb0ra/SigDiffusions) by Barancikova et al. Published
+  here with permission from Barbora, with the requested note linking to the
+  original repository. The adapted code is not covered by the MIT license
+  above; all rights to it remain with its authors. The remaining Legendre
+  code is covered by the MIT license above.
+
+- probsiginv/inversion/baselines/_free_lie_algebra.py was written by
+  Jeremy Reizenstein (https://github.com/bottler/free-lie-algebra-py) and is
+  included unmodified, as redistributed via
+  https://github.com/crispitagorico/hallareas and
+  https://github.com/Barb0ra/SigDiffusions. Copyright (c) Jeremy Reizenstein.
+  It is licensed under the MIT license, as declared in the upstream setup.py,
+  under the same terms as the MIT license text above.

@@ -1,0 +1,33 @@
+# Dataset (built by configs/dataset/gbm_default.yaml; override with --data-path)
+data_path: _data/gbm_mu1.5-2.5_sig1.5-2.5
+aug_type: TA       # LS | TA | TLL3 | TLL
+sig_type: logsig   # logsig only
+sig_depth: null    # required: set explicitly in YAML or override via --sig-depth
+sig_full: false    # false = pruned (default), true = full indices
+sig_transform: level_symlog  # raw | symlog | level | level_symlog
+path_transform: raw        # raw | diff
+
+# Model
+arch: dit
+patch_size: 8
+d_model: 128
+n_heads: 8
+n_layers: 7
+emb_dim: 128
+
+# Process
+training_method: regression   # ddpm | flow | regression
+
+# Optimization
+lr: 2.0e-4
+batch_size: 64
+epochs: 100
+ema_decay: 0.995
+
+# Checkpointing
+save_every: 100
+output_root: _checkpoints
+
+# Monitor
+monitor_n_paths: 0
+monitor_n_samples: 0

@@ -1,0 +1,11 @@
+aug_type: LS
+sig_type: logsig
+channels: 2
+max_depth: 6
+level_indices:
+  1: [1]
+  2: [2]
+  3: [3]
+  4: [5]
+  5: [8]
+  6: [14]

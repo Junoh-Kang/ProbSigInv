@@ -1,0 +1,15 @@
+# Tested with Python 3.10. Install the CUDA build of torch that matches your driver,
+# e.g. pip install torch==2.5.1 --extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+numpy==2.2.6
+scipy==1.15.1
+iisignature==0.24
+sympy==1.13.1
+pyparsing==3.2.1
+PyYAML==6.0.2
+tqdm==4.67.1
+pandas==2.2.2
+matplotlib==3.10.0
+fbm==0.3.0
+yfinance
+pytest

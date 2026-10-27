@@ -1,0 +1,30 @@
+process: finance
+source: sp500         # sp500 | fx
+ticker: "^GSPC"
+
+# --- Window settings ---
+n_steps: 252          # ~1 trading year per window
+window_stride: 1
+T_horizon: 1.0
+S0: 1.0
+path_scale: 10.0
+
+# --- Signature ---
+sig_depth: 6
+sig_type: logsig      # logsig only
+aug_type:
+  - TA
+  - TLL3
+output_root: _data
+
+# --- Cache ---
+cache_dir: _data/sp500
+
+# --- Train split ---
+start: '2009-05-01'
+end: '2022-12-31'
+
+# --- Test splits ---
+test:
+  - {tag: in-distribution, window_stride: 63, start: '2009-05-01', end: '2022-12-31'}
+  - {tag: out-distribution, window_stride: 5, start: '2023-01-01', end: '2025-12-31'}
